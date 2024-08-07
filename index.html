@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Teste Desenvolvedor Web Trainee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form id="formcadastro">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        
+        <button type="button" id="btnsubmit" onclick="saveData()">Salvar</button>
+        <button type="button" onclick="clearForm()">Limpar</button>
+    </form>
+    
+    <h2>Lista de Cadastros</h2>
+    <ul id="datalist"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
